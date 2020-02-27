@@ -1,0 +1,36 @@
+package com.example.listerapp;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class SchoolTask_Main extends AppCompatActivity {
+
+    Button btn_return, btn_add;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.school_task_main);
+
+        btn_return = findViewById(R.id.schooltask_main_btnreturn);
+        btn_add = findViewById(R.id.schooltask_main_btnadd);
+
+        btn_return.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SchoolTask_Main.this, SchoolTask_Add.class));
+            }
+        });
+    }
+}
