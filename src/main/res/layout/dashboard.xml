@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradientbg1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher_foreground"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Listing App"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                style="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_bg"
+                android:text="PROFILE"
+                android:textColor="#000000"
+                android:id="@+id/dashboard_btnprofile"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_bg"
+                android:text="RECENT TASK"
+                android:textColor="#000000"
+                android:id="@+id/dashboard_btnrecent"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_bg"
+                android:text="HOME TASK"
+                android:textColor="#000000"
+                android:id="@+id/dashboard_btnhometask"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_bg"
+                android:text="SCHOOL TASK"
+                android:textColor="#000000"
+                android:id="@+id/dashboard_btnschooltask"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_bg"
+                android:text="LOGOUT"
+                android:textColor="#000000"
+                android:id="@+id/dashboard_btnlogout"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
